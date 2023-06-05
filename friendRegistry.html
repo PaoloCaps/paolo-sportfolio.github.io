@@ -33,7 +33,7 @@
 </head>
 <body>
   <h1>Friend Registry</h1>
-  <form action="#" method="post">
+  <form action="#" method="post" onsubmit="event.preventDefault(); printInfo();">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required><br>
     <label for="age">Age:</label>
@@ -50,8 +50,7 @@
     <label for="phone">Phone Number:</label>
     <input type="tel" id="phone" name="phone" required><br>
     <input type="submit" value="Submit">
+    <button type="button" onclick="printInfo()">Print Info</button>
   </form>
-
-  <button onclick="printInfo()">Print Info</button>
 </body>
 </html>
