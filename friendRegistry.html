@@ -13,27 +13,10 @@
       color: white;
     }
   </style>
-  <script>
-    function printInfo() {
-      var name = document.getElementById("name").value;
-      var age = document.getElementById("age").value;
-      var gender = document.getElementById("gender").value;
-      var email = document.getElementById("email").value;
-      var phone = document.getElementById("phone").value;
-
-      var info = "Name: " + name + "\n" +
-                 "Age: " + age + "\n" +
-                 "Gender: " + gender + "\n" +
-                 "Email: " + email + "\n" +
-                 "Phone Number: " + phone;
-
-      alert(info);
-    }
-  </script>
 </head>
 <body>
   <h1>Friend Registry</h1>
-  <form action="#" method="post" onsubmit="event.preventDefault(); printInfo();">
+  <form action="#" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required><br>
     <label for="age">Age:</label>
@@ -50,7 +33,6 @@
     <label for="phone">Phone Number:</label>
     <input type="tel" id="phone" name="phone" required><br>
     <input type="submit" value="Submit">
-    <button type="button" onclick="printInfo()">Print Info</button>
   </form>
 </body>
 </html>
